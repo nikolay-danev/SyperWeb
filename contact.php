@@ -10,16 +10,12 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// CORS Headers (ако е нужно)
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-// ================================
-// Configuration - ПРОМЕНИ ТЕЗИ НАСТРОЙКИ
-// ================================
 
-$to_email = 'office@rudyvita.com'; // Твоят фирмен имейл
-$from_name = 'SyperWeb Contact Form'; // Име на формата
+$to_email = 'office@rudyvita.com'; 
+$from_name = 'SyperWeb Contact Form';
 
 // ================================
 // Get and Sanitize Input
@@ -79,12 +75,12 @@ if (!empty($errors)) {
 // Anti-Spam Check (simple honeypot)
 // ================================
 
-// Проверка за твърде бързо изпращане (bot защита)
+
 session_start();
 $current_time = time();
 if (isset($_SESSION['last_submission'])) {
     $time_diff = $current_time - $_SESSION['last_submission'];
-    if ($time_diff < 3) { // Не позволявай изпращане по-често от на 3 секунди
+    if ($time_diff < 3) { 
         http_response_code(429);
         echo json_encode([
             'success' => false,
@@ -198,7 +194,7 @@ if ($mail_sent) {
     http_response_code(200);
     echo json_encode([
         'success' => true,
-        'message' => "Благодарим ви, $name! Вашето съобщение беше изпратено успешно. Ще се свържем с вас скоро."
+        'message' => "Благодарим ви, $name! Вашето съобщение беше изпратено успешно. Ще се свържем с Вас скоро."
     ]);
     
     // Optional: Log successful submission
