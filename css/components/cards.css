@@ -1,0 +1,104 @@
+/* ================================
+   Service Cards
+   ================================ */
+
+.service-card {
+  background: var(--color-white);
+  padding: var(--spacing-10);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-card__icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-primary-pale) 0%, rgba(255, 107, 53, 0.15) 100%);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--spacing-6);
+  transition: all var(--transition-base);
+}
+
+.service-card__icon svg {
+  color: var(--color-primary);
+  transition: transform var(--transition-base);
+}
+
+.service-card:hover .service-card__icon {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.service-card:hover .service-card__icon svg {
+  color: var(--color-white);
+  transform: scale(1.1);
+}
+
+.service-card__title {
+  font-size: var(--font-size-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-4);
+  font-weight: var(--font-weight-bold);
+}
+
+.service-card__description {
+  color: var(--color-gray-800);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-6);
+}
+
+.service-card__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.service-card__features li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+}
+
+.service-card__features li::before {
+  content: '✓';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: var(--color-primary-pale);
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  flex-shrink: 0;
+}
