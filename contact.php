@@ -14,7 +14,7 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 
-$to_email = 'office@rudyvita.com'; 
+$to_email = 'office@syperweb.com'; 
 $from_name = 'SyperWeb Contact Form';
 
 // ================================

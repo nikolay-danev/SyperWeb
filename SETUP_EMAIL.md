@@ -25,7 +25,7 @@
 Отвори **contact.php** и промени следните настройки на **ред 18-19**:
 
 ```php
-$to_email = 'office@rudyvita.com'; 
+$to_email = 'office@syperweb.com'; 
 $from_name = 'SyperWeb Contact Form';
 ```
 

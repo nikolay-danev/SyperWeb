@@ -253,7 +253,7 @@ fetch('/api/contact', {
 ## 📞 Поддръжка
 
 При въпроси или проблеми:
-- Email: office@rudyvita.com
+- Email: office@syperweb.com
 
 ---
 
