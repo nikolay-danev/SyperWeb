@@ -31,7 +31,6 @@ function sanitize_input($data) {
 // Get POST data
 $name = isset($_POST['name']) ? sanitize_input($_POST['name']) : '';
 $email = isset($_POST['email']) ? sanitize_input($_POST['email']) : '';
-$phone = isset($_POST['phone']) ? sanitize_input($_POST['phone']) : '';
 $message = isset($_POST['message']) ? sanitize_input($_POST['message']) : '';
 
 // ================================
@@ -131,13 +130,6 @@ $email_body = "
                 <div class='value'><a href='mailto:$email'>$email</a></div>
             </div>
             
-            " . (!empty($phone) ? "
-            <div class='field'>
-                <div class='label'>📱 Телефон:</div>
-                <div class='value'><a href='tel:$phone'>$phone</a></div>
-            </div>
-            " : "") . "
-            
             <div class='field'>
                 <div class='label'>💬 Съобщение:</div>
                 <div class='value'>" . nl2br($message) . "</div>
@@ -160,14 +152,12 @@ $plain_text = "
 
 Име: $name
 Email: $email
-" . (!empty($phone) ? "Телефон: $phone\n" : "") . "
 
 Съобщение:
 $message
 
 ---
 Получено на: " . date('d.m.Y H:i:s') . "
-IP адрес: " . $_SERVER['REMOTE_ADDR'] . "
 ";
 
 // ================================

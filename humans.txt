@@ -1,0 +1,13 @@
+# humans.txt - За хората зад SyperWeb
+
+/* TEAM */
+Име: SyperWeb
+Позиция: Уеб разработка и дизайн
+Локация: София, България
+Email: office@rudyvita.com
+
+Технологии: HTML5, CSS3, JavaScript ES6+
+Шрифтове: Google Fonts (Inter, Poppins)
+SEO: Structured Data, Schema.org
+Дизайн: Modern, Responsive, User-Friendly
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Главна страница -->
+    <url>
+        <loc>https://www.syperweb.com/</loc>
+        <lastmod>2025-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Секция Услуги -->
+    <url>
+        <loc>https://www.syperweb.com/#services</loc>
+        <lastmod>2025-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Секция Процес -->
+    <url>
+        <loc>https://www.syperweb.com/#process</loc>
+        <lastmod>2025-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Секция Портфолио -->
+    <url>
+        <loc>https://www.syperweb.com/#portfolio</loc>
+        <lastmod>2025-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Секция Контакти -->
+    <url>
+        <loc>https://www.syperweb.com/#contact</loc>
+        <lastmod>2025-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Контактна форма -->
+    <url>
+        <loc>https://www.syperweb.com/contact.php</loc>
+        <lastmod>2025-12-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+</urlset>

@@ -115,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const formData = new FormData(contactForm);
       const name = formData.get('name');
       const email = formData.get('email');
-      const phone = formData.get('phone');
       const message = formData.get('message');
       
       // Basic validation
@@ -133,11 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Simulate form submission
       // In production, you would send this data to a server
-      simulateFormSubmission(name, email, phone, message);
+      simulateFormSubmission(name, email, message);
     });
   }
   
-  function simulateFormSubmission(name, email, phone, message) {
+  function simulateFormSubmission(name, email, message) {
     // Show loading state
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;
@@ -148,7 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const formData = new FormData();
     formData.append('name', name);
     formData.append('email', email);
-    formData.append('phone', phone);
     formData.append('message', message);
     
     // Send to PHP backend

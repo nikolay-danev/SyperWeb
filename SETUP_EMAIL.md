@@ -25,7 +25,7 @@
 Отвори **contact.php** и промени следните настройки на **ред 18-19**:
 
 ```php
-$to_email = 'info@syperweb.com'; // ПРОМЕНИ С ТВОЯ ФИРМЕН EMAIL
+$to_email = 'office@rudyvita.com'; 
 $from_name = 'SyperWeb Contact Form';
 ```
 
@@ -71,7 +71,6 @@ $to_email = 'info@syperweb.com';
 // Вземи данни от формата
 $name = $_POST['name'] ?? '';
 $email = $_POST['email'] ?? '';
-$phone = $_POST['phone'] ?? '';
 $message = $_POST['message'] ?? '';
 
 $mail = new PHPMailer(true);
@@ -99,7 +98,6 @@ try {
         <h2>Ново контактно съобщение</h2>
         <p><strong>Име:</strong> $name</p>
         <p><strong>Email:</strong> $email</p>
-        <p><strong>Телефон:</strong> $phone</p>
         <p><strong>Съобщение:</strong></p>
         <p>$message</p>
     ";

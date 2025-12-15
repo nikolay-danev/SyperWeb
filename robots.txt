@@ -1,0 +1,39 @@
+# robots.txt за SyperWeb
+# www.robotstxt.org/
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*.php$
+
+# Специфични правила за Google
+User-agent: Googlebot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Специфични правила за Bing
+User-agent: Bingbot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Забрана за проблемни ботове
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap локация
+Sitemap: https://www.syperweb.com/sitemap.xml
