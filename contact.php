@@ -137,7 +137,6 @@ $email_body = "
             
             <div class='footer'>
                 <p>Получено на: " . date('d.m.Y H:i:s') . "</p>
-                <p>IP адрес: " . $_SERVER['REMOTE_ADDR'] . "</p>
             </div>
         </div>
     </div>
